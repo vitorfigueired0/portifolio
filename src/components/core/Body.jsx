@@ -1,8 +1,9 @@
+import bashgif from '../../images/bash.gif'
 
 export const Body = () => {
   return (
     <div>
-      AAAAAAAAAAAAA
+      <img src={bashgif} alt="" />
     </div>
   )
 }
