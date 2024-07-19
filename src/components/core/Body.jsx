@@ -1,8 +1,8 @@
 
 export const Body = () => {
   return (
-    <div className="text-white">
-      
+    <div className="relative top-24 text-white ">
+      AAAAAAAAAAAAA
     </div>
   )
 }

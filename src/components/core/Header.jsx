@@ -5,7 +5,7 @@ export const Header = () => {
   const linksStyle = 'font-custom hover:text-darkRed cursor-pointer'
 
   return (
-    <header className="fixed w-full text-lg text-white bg-black h-20 flex items-center">
+    <header className="fixed top-0 w-full z-50 text-lg text-white bg-black h-20 flex items-center">
 
       <button className='px-0.5 mx-8 inline-block'>
         <MenuIcon sx={{ 
@@ -25,7 +25,7 @@ export const Header = () => {
         <a href='#' className={linksStyle}>projects</a>
         <a href='#' className={linksStyle}>contact me</a>
       </div>
-      
+
     </header>
   )
 }
