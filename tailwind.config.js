@@ -6,7 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: 'rgb(15 23 42)'
+        darkMain: '#0D0D0D',
+        darkRed: '#400101',
+        middleRed: '#730710',
+        lightRed: '#BF0A0A',
+        lightMain: '#BFA5A3'
+      },
+      fontFamily: {
+        custom: ['phonk', 'sans-serif']
       }
     },
   },
