@@ -9,10 +9,12 @@ function App() {
   const [started, setStarted] = useState(false);
 
   return (
-    <div className='bg-darkMain min-h-screen'>
+    <div className='bg-darkMain min-h-screen overflow-hidden'>
       <Header />
-      {started ? <Body /> : <StartButton onClick={() => setStarted(true)} />}
-    </div>
+      <div className='mt-20 flex justify-center items-center align-middle min-h-screen overflow-hidden'>
+        {started ? <Body /> : <StartButton onClick={() => setStarted(true)} />}
+      </div>
+    </div> 
   );
 }
 
