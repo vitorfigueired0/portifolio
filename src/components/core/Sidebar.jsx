@@ -1,29 +1,30 @@
 import MenuIcon from '@mui/icons-material/Menu';
 
-export const Header = ({ onClick }) => {
-  const linksStyle = 'font-custom hover:text-darkRed cursor-pointer';
+export const Sidebar = ({ onClick }) => {
+  const linksStyle = 'font-custom hover:text-lightMain cursor-pointer';
 
-  return (
-    <header className="fixed top-0 w-full z-50 text-lg text-white bg-black h-20 flex items-center">
-      <button className='px-0.5 mx-8 inline-block' onClick={onClick}>
+  return(
+    <div className='bg-middleRed h-full w-1/6 z-50 absolute'>
+      
+      <button className='mx-8 mt-2 inline-block' onClick={onClick}>
         <MenuIcon 
           sx={{ 
             fontSize: 60, 
-            color: '#BF0A0A',
+            color: '#0D0D0D',
             cursor: 'pointer',
             '&:hover': {
-              color: '#730710'
+              color: '#BFA5A3'
             } 
           }} 
         />
       </button>
 
-      <div className='flex px-0.5 mx-1.5 ml-auto mr-8 gap-20 text-middleRed'>
+      <div className='flex flex-col mx-9 inline-block gap-5 mt-12 text-mainDark'>
         <a href='#' className={linksStyle}>home</a>
         <a href='#' className={linksStyle}>about me</a>
         <a href='#' className={linksStyle}>projects</a>
         <a href='#' className={linksStyle}>contact me</a>
       </div>
-    </header>
-  );
-};
+    </div>
+  )
+}
