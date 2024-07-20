@@ -19,7 +19,7 @@ export const Sidebar = ({ onClick }) => {
         />
       </button>
 
-      <div className='flex flex-col mx-9 inline-block gap-5 mt-12 text-mainDark'>
+      <div className='flex flex-col mx-9 inline-block gap-5 mt-12 text-black text-xl'>
         <a href='#' className={linksStyle}>home</a>
         <a href='#' className={linksStyle}>about me</a>
         <a href='#' className={linksStyle}>projects</a>
