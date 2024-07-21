@@ -3,7 +3,7 @@ import bashgif from '../../images/bash.gif'
 export const Body = () => {
   return (
     <div>
-      <img src={bashgif} alt="" />
+      <h1 className='text-6xl text-middleRed font-custom'>COMING SOON</h1>
     </div>
   )
 }
